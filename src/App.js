@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import ReactGA from "react-ga4";
+import {BrowserRouter as Router, useLocation} from 'react-router-dom';
+import AppContent from "./components/app-layouts/AppContent";
+import AppHeaderContainer from "./components/app-layouts/AppHeaderContainer";
+import AppFooter from "./components/app-layouts/AppFooter";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ReactGA.initialize('G-1BNPWF6D1H');
+
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+    useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+    return null;
 }
+
+const App = () => {
+
+    return (
+        <div className="App">
+            <Router>
+                <ScrollToTop/>
+                <AppHeaderContainer>
+                    <AppContent/>
+                    <AppFooter/>
+                </AppHeaderContainer>
+            </Router>
+        </div>
+    );
+};
 
 export default App;
