@@ -19,6 +19,7 @@ import ScheduleMeasurementPage from "../app-screens/schedule-measurement/Schedul
 import SlowestAdoption from "../app-screens/blogs-page/blogs/SlowestAdoption";
 import IndianWedding from "../app-screens/blogs-page/blogs/IndianWedding";
 import ApparelOyo from "../app-screens/blogs-page/blogs/ApparelOyo";
+import FeedbackPage from "../app-screens/feedback-page/FeedbackPage";
 
 const AppContent = () => {
 
@@ -33,6 +34,7 @@ const AppContent = () => {
                 <Route path={redirectionLinks.HOW_IT_WORKS} element={<HowItWorksPage />} />
                 <Route path={redirectionLinks.WHY_RIGHTER} element={<WhyRighterPage />} />
                 <Route path={redirectionLinks.CONTACT_US} element={<ContactUsPage />} />
+                <Route path={redirectionLinks.FEEDBACK} element={<FeedbackPage />} />
                 <Route path={redirectionLinks.OUR_STORY} element={<OurStoryPage/>} />
                 <Route path={redirectionLinks.PRIVACY_POLICY} element={<PrivacyPolicyPage/>} />
                 <Route path={redirectionLinks.TERMS_AND_CONDITIONS} element={<TermsAndConditionsPage/>} />

@@ -41,6 +41,7 @@ const AppFooter = () => {
                             <List inverted link>
                                 <List.Item as='a' href={redirectionLinks.FAQ} onClick={() => handleNavigation(redirectionLinks.FAQ, "faq")}>FAQs</List.Item>
                                 <List.Item as='a' href={redirectionLinks.BLOGS} onClick={() => handleNavigation(redirectionLinks.BLOGS, "blogs")}>Blogs</List.Item>
+                                <List.Item as='a' href={redirectionLinks.FEEDBACK} onClick={() => handleNavigation(redirectionLinks.FEEDBACK, "feedback")}>Feedback</List.Item>
                                 <List.Item as='a' href={redirectionLinks.OUR_STORY} onClick={() => handleNavigation(redirectionLinks.OUR_STORY, "our-story")}>Our Story</List.Item>
                                 <List.Item as='a' href={redirectionLinks.HOW_IT_WORKS} onClick={() => handleNavigation(redirectionLinks.HOW_IT_WORKS, "how-it-works")}>How it works</List.Item>
                                 <List.Item as='a' href={redirectionLinks.WHY_RIGHTER} onClick={() => handleNavigation(redirectionLinks.WHY_RIGHTER, "why-righter")}>Why Righter</List.Item>

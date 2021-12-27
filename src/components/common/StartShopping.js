@@ -8,7 +8,7 @@ const StartShopping = () => {
         <div className="StartShopping">
             <Header as='h1' style={{fontSize: '3em', padding: '1.5em 0em 0.5em 0em'}}>Start Shopping</Header>
             <Card.Group centered itemsPerRow={2} stackable>
-                <Card link target="_blank" href={redirectionLinks.UPLOAD_YOUR_OWN_DESIGN_GFORM} style={{backgroundColor:'#F0F0F0'}}>
+                <Card link target="_blank" href={redirectionLinks.UPLOAD_YOUR_OWN_DESIGN} style={{backgroundColor:'#F0F0F0'}}>
                     <Card.Content>
                         <Card.Header textAlign={'center'} style={{fontSize: '2em', paddingTop:'0.5em'}}>
                             <Icon name='upload' /> Send us your design

@@ -36,6 +36,7 @@ export const redirectionLinks = {
     TERMS_AND_CONDITIONS: "/terms-and-conditions",
     OUR_STORY: "/our-story",
     FAQ: "/faq",
+    FEEDBACK: "/feedback",
     BLOGS: "/blogs",
     SLOWEST_ADOPTION_BLOG: "/blogs/why-online-cloth-purchasing-has-the-slowest-adoption-across-the-categories",
     INDIAN_WEDDING_BLOG: "/blogs/is-the-big-indian-wedding-market-rip-enough-for-a-big-shift",
