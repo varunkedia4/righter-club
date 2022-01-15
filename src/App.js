@@ -1,29 +1,36 @@
-import React, {useEffect} from 'react';
-import ReactGA from "react-ga4";
-import {BrowserRouter as Router, useLocation} from 'react-router-dom';
-import AppContent from "./components/app-layouts/AppContent";
-import AppHeaderContainer from "./components/app-layouts/AppHeaderContainer";
-import AppFooter from "./components/app-layouts/AppFooter";
+import React, {Suspense, lazy} from 'react';
+// import { useMediaQuery } from 'react-responsive'
+// import DesktopApp from "./desktop-view/DesktopApp";
+import { Spin , Row} from 'antd';
 
+import ReactGA from "react-ga4";
 ReactGA.initialize('G-1BNPWF6D1H');
 
-const ScrollToTop = () => {
-    const { pathname } = useLocation();
-    useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-    return null;
-}
+const MobileApp = lazy(() => import('./mobile-view/MobileApp'));
+
+const LoaderScreen = () => {
+    return(
+        <div style={{paddingTop: '25em'}}>
+            <Row justify={'center'} align={'middle'}>
+                <Spin size="large" />
+            </Row>
+        </div>
+    );
+};
 
 const App = () => {
 
+    // const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' })
+    // const isMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+
     return (
         <div className="App">
-            <Router>
-                <ScrollToTop/>
-                <AppHeaderContainer>
-                    <AppContent/>
-                    <AppFooter/>
-                </AppHeaderContainer>
-            </Router>
+            {/*{ isMobile &&*/}
+                <Suspense fallback={<LoaderScreen />}>
+                    <MobileApp />
+                </Suspense>
+            {/*}*/}
+            {/*{ isDesktop && <DesktopApp /> }*/}
         </div>
     );
 };
