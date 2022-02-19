@@ -13,7 +13,7 @@ const BlogsOnePage = () => {
 
     return (
         <div style={{paddingTop: '3.5em'}}>
-            <div id='BlogTitle' style={{backgroundColor: "#E8E8E8", paddingTop: '1.5em', marginBottom: '1em', textAlign: 'center', paddingBottom: '1em'}}>
+            <div id='BlogTitle' style={{backgroundColor: "#e9f1f9", paddingTop: '1.5em', marginBottom: '1em', textAlign: 'center', paddingBottom: '1em'}}>
                 <Title level={5}>{blogsTitle.ONE}</Title>
                 <Text>{blogsWriter.ONE + " | " + blogsReadTime.ONE}</Text>
             </div>

@@ -19,6 +19,9 @@ const OfferModal = () => {
         return () => clearTimeout(timer);
     }, []);
 
+    const whatsAppNavigationLink = navigationLinks.WHATSAPP_SUVIGNA + "/?text=" +
+        "Hi Righter! I'm looking for tailor made men's wear. Help me get started.";
+
     return(
         <div>
             <Modal footer={<div style={{padding: '0', margin: '0'}}></div>} centered visible={isOfferModalVisible}
@@ -34,9 +37,9 @@ const OfferModal = () => {
                 </div>
                 <div>
                     <Row justify={'center'}>
-                        <Button target='_blank' type='primary' style={{backgroundColor: '#25D366'}} shape={'round'}
-                                href={navigationLinks.WHATSAPP} onClick={() => setOfferModalVisible(false)}>
-                            WhatsApp
+                        <Button target='_blank' type='primary' shape={'round'}
+                                href={whatsAppNavigationLink} onClick={() => setOfferModalVisible(false)}>
+                            Chat with us
                         </Button>
                     </Row>
                 </div>

@@ -28,9 +28,12 @@ const CustomerSupportPage = () => {
         submitRequest(emailSubject.CUSTOMER_SUPPORT, customerDetails, commonConstants.NONE, commonConstants.NONE)
     }
 
+    const whatsAppNavigationLink = navigationLinks.WHATSAPP + "/?text=" +
+        "Hi Righter! I'm looking for tailor made men's wear. Help me get started";
+
     return (
         <div style={{paddingTop: '3.5em'}}>
-            <div id='PageTitle' style={{backgroundColor: "#E8E8E8", paddingLeft: "1.5em", paddingTop: '1em', marginBottom: '1em'}}>
+            <div id='PageTitle' style={{backgroundColor: "#e9f1f9", paddingLeft: "1.5em", paddingTop: '1em', marginBottom: '1em'}}>
                 <Row><Title level={4}>{commonConstants.CUSTOMER_SUPPORT}</Title></Row>
             </div>
 
@@ -38,13 +41,13 @@ const CustomerSupportPage = () => {
                 <Card style={{ marginBottom: '1em' }}>
                     <Title level={5}> <QuestionCircleOutlined style={{paddingRight: '0.5em'}} /> Product & Order Queries </Title>
                     <Text type={'secondary'}> We are available for all queries pertaining to products & orders.</Text><br/><br/>
-                    <Link style={{color: "#000000"}} href={navigationLinks.WHATSAPP} target="_blank"><WhatsAppOutlined style={{paddingRight: '0.5em'}} /> {commonConstants.WHATSAPP_NUMBER} </Link> <br/>
+                    <Link style={{color: "#000000"}} href={whatsAppNavigationLink}><WhatsAppOutlined style={{paddingRight: '0.5em'}} /> {commonConstants.WHATSAPP_NUMBER} </Link> <br/>
                     <Text><MailOutlined style={{paddingRight: '0.5em'}} /> {commonConstants.RIGHTER_EMAIL} </Text>
                 </Card>
 
                 <Card style={{ marginBottom: '1em' }}>
                     <Title level={5}> <MessageOutlined style={{paddingRight: '0.5em'}} /> Chat with an Expert</Title>
-                    <Text type={'secondary'}> A really quick chat perhaps to get you started on what's happening at Righter from Deals to Sales. Get to know more by using the <a style={{color: '#25D366'}} href={navigationLinks.WHATSAPP} target='_blank'> WhatsApp </a> button on the top right side of your screen.</Text>
+                    <Text type={'secondary'}> A really quick chat perhaps to get you started on what's happening at Righter from Deals to Sales. Get to know more by using the <a style={{color: '#25D366'}} href={whatsAppNavigationLink} target='_blank'> WhatsApp </a> button on the top right side of your screen.</Text>
                 </Card>
 
                 <Card style={{ marginBottom: '1em' }}>

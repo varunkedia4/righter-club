@@ -25,7 +25,7 @@ const NameAndPrice = (props) => {
     }
 
     return(
-        <div style={{paddingLeft: "1.5em", paddingTop: '0.5em', paddingBottom: '1em'}}>
+        <div style={{paddingLeft: "1.5em", paddingTop: '0.5em', paddingBottom: '1em', paddingRight: '1em'}}>
             <Row>
                 <Col span={16}>
                     <Row><Text type={'secondary'}> {props.productDetails.fabricColor} {designName} {catalogName}</Text></Row>
@@ -42,11 +42,11 @@ const NameAndPrice = (props) => {
                     <Col span={4}>
                         <div style={{paddingTop: '0.5em'}}>
                             <Row justify="center">
-                                <Button onClick={() => setDesignsDrawerVisible(true)} style={{backgroundColor: '#FF0000', color: '#FFFFFF'}} shape="circle">
+                                <Button onClick={() => setDesignsDrawerVisible(true)} style={{backgroundColor: '#000000', color: '#FFFFFF'}} shape="circle">
                                     +{props.productDetails.designDetails.length-1}
                                 </Button>
                             </Row>
-                            <Row justify="center"> <Text type={'danger'} strong> Designs </Text> </Row>
+                            <Row justify="center"> <Text strong> Designs </Text> </Row>
                             <Drawer placement={'bottom'} closable={true} height={300}
                                     onClose={() => setDesignsDrawerVisible(false)} visible={isDesignsDrawerVisible}>
                                 <MoreDesigns
@@ -62,11 +62,9 @@ const NameAndPrice = (props) => {
                     <Col span={4}>
                         <div style={{paddingTop: '0.5em'}}>
                             <Row justify="center">
-                                <Button  shape="circle" onClick={handleShareButtonClick}>
-                                    <ShareAltOutlined />
-                                </Button>
+                                <Button  shape="circle" onClick={handleShareButtonClick}><ShareAltOutlined /></Button>
                             </Row>
-                            <Row justify="center"> <Text> Share </Text> </Row>
+                            <Row justify="center"> <Text type={'secondary'} strong> Share </Text> </Row>
                         </div>
                     </Col>
                 }

@@ -20,7 +20,7 @@ const ProductCard = (props) => {
 
     return(
         <div style={{paddingRight: '0.5em'}}>
-            <a href={navigationLink} target="_blank">
+            <a href={navigationLink}>
                 <Card> <Image style={{width: '100%'}} preview={false} src={props.productDetails.designDetails[designNumber-1].imageLinks[0]}/> </Card>
                 <Col style={{paddingTop: '0.5em', paddingLeft: '0.5em', paddingBottom: '1em'}}>
                     <Row>
@@ -41,7 +41,9 @@ const CustomersAlsoLiked = (props) => {
     const getNavigationLinkForSeeMore = () => {
         if(props.catalogCode === catalogCode.KURTA || props.catalogCode === catalogCode.SHERWANI ||
             props.catalogCode === catalogCode.NEHRU_JACKET || props.catalogCode === catalogCode.JODHPURI ||
-            props.catalogCode === catalogCode.SUIT || props.catalogCode === catalogCode.SUIT_WITH_VEST) {
+            props.catalogCode === catalogCode.TWO_PIECE_SUIT || props.catalogCode === catalogCode.THREE_PIECE_SUIT ||
+            props.catalogCode === catalogCode.CASUAL_BLAZER || props.catalogCode === catalogCode.TUXEDO ||
+            props.catalogCode === catalogCode.TROUSER || props.catalogCode === catalogCode.SHIRT) {
             return navigationLinks.CATEGORIES + props.catalogCode
         } else return navigationLinks.OCCASIONS + props.catalogCode;
     }
@@ -84,9 +86,9 @@ const CustomersAlsoLiked = (props) => {
                     </Col>
                 </Row>
             </div>
-            <div style={{paddingTop: '1.5em'}}>
+            <div style={{paddingTop: '1.5em', paddingLeft: '2em', paddingRight: '2em'}}>
                 <Row justify={'center'}>
-                    <Button href={getNavigationLinkForSeeMore()} type={'primary'} shape={'round'}>
+                    <Button block href={getNavigationLinkForSeeMore()} type={'primary'} shape={'round'}>
                         See More
                     </Button>
                 </Row>

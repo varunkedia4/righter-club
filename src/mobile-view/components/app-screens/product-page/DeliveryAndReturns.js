@@ -12,9 +12,9 @@ const DeliveryAndReturns = (props) => {
         <div style={{paddingLeft: '1.5em', paddingRight: '1em', paddingTop: '1em', paddingBottom: '1em'}}>
             <div style={{paddingBottom: '1em'}}>
                 <Row>
-                    <Col span={18}><Text strong> DELIVERY & RETURNS </Text></Col>
-                    <Col span={6}>
-                        <Link onClick={() => setViewTermsDrawerOpen(true)}> View Terms </Link>
+                    <Col span={17}><Text strong> DELIVERY & RETURNS </Text></Col>
+                    <Col span={7}>
+                        <Link onClick={() => setViewTermsDrawerOpen(true)}> VIEW TERMS </Link>
                         <Drawer placement="bottom" height={450} onClose={() => setViewTermsDrawerOpen(false)} visible={isViewTermsDrawerOpen}>
                             <div><Row justify={'center'}><Text strong>Resize & Return Policy</Text></Row></div>
                             <ResizeAndReturnTerms/>
@@ -24,23 +24,28 @@ const DeliveryAndReturns = (props) => {
             </div>
 
             <div style={{paddingBottom: '0.6em'}}>
-                <Text type={'secondary'}><CarOutlined style={{paddingRight: '1em'}} /> Get it delivered within {props.productDetails.estimatedDelivery}</Text>
+                <Text><CarOutlined style={{paddingRight: '1em'}} /></Text>
+                <Text type={'secondary'}>Get it delivered within {props.productDetails.estimatedDelivery}</Text>
             </div>
 
             <div style={{paddingBottom: '0.6em'}}>
-                <Text type={'secondary'}><HistoryOutlined style={{paddingRight: '1em'}} /> Easy 10 days resizing available</Text>
+                <Text><HistoryOutlined style={{paddingRight: '1em'}} /> </Text>
+                <Text type={'secondary'}>Easy 10 days resizing available</Text>
             </div>
 
             <div style={{paddingBottom: '0.6em'}}>
-                <Text type={'secondary'}><SwapOutlined style={{paddingRight: '1em'}} /> Returns available in specific cases</Text>
+                <Text><SwapOutlined style={{paddingRight: '1em'}} /></Text>
+                <Text type={'secondary'}>Returns available in specific cases</Text>
             </div>
 
             <div style={{paddingBottom: '0.6em'}}>
-                <Text type={'secondary'}><DollarOutlined style={{paddingRight: '1em'}} /> Pay only after 100% satisfaction with the outfit</Text>
+                <Text><DollarOutlined style={{paddingRight: '1em'}} /> </Text>
+                <Text type={'secondary'}>Pay only after 100% satisfaction with the outfit</Text>
             </div>
 
             <div style={{paddingBottom: '0.6em'}}>
-                <Text type={'secondary'}><InfoCircleOutlined style={{paddingRight: '1em'}} /> Expect slight variation in color of product</Text>
+                <Text><InfoCircleOutlined style={{paddingRight: '1em'}} /></Text>
+                <Text type={'secondary'}>Expect slight variation in color of product</Text>
             </div>
         </div>
     );

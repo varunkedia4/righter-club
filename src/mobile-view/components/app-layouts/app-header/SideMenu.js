@@ -19,27 +19,31 @@ const SideMenu = (props) => {
             <Drawer title={<a style={{color:'#000000'}} href={navigationLinks.HOME}>Righter</a>} placement={'left'} closable={true} onClose={props.closeMenu} visible={props.isMenuVisible}>
                 <a style={{color:'#000000'}} href={navigationLinks.HOME} onClick={() => handleNavigation(navigationLinks.HOME)}> <Icon name='home'/> {commonConstants.HOME} </a> <Divider />
 
-                <Icon style={{paddingRight: '1.3em'}} name='th'/>
-                <Dropdown text='Shop by Occasion' pointing='top right' className='link item'>
-                    <Dropdown.Menu>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.MEHENDI)}>{catalogName.MEHENDI}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.HALDI)}>{catalogName.HALDI}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.ENGAGEMENT)}>{catalogName.ENGAGEMENT}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.WEDDING)}>{catalogName.WEDDING}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.DIWALI)}>{catalogName.DIWALI}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.HOLI)}>{catalogName.HOLI}</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown><Divider />
-
                 <Icon name='th' style={{paddingRight: '1.3em'}}/>
                 <Dropdown text='Shop by Category' pointing='top right' className='link item'>
                     <Dropdown.Menu>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.KURTA)}>{catalogName.KURTA}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.TWO_PIECE_SUIT)}>{catalogName.TWO_PIECE_SUIT}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.THREE_PIECE_SUIT)}>{catalogName.THREE_PIECE_SUIT}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.CASUAL_BLAZER)}>{catalogName.CASUAL_BLAZER}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.TUXEDO)}>{catalogName.TUXEDO}</Dropdown.Item>
                         <Dropdown.Item onClick={() => handleNavigation(navigationLinks.SHERWANI)}>{catalogName.SHERWANI}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.NEHRU_JACKET)}>{catalogName.NEHRU_JACKET}</Dropdown.Item>
                         <Dropdown.Item onClick={() => handleNavigation(navigationLinks.JODHPURI)}>{catalogName.JODHPURI}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.SUIT)}>{catalogName.SUIT}</Dropdown.Item>
-                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.SUIT_WITH_VEST)}>{catalogName.SUIT_WITH_VEST}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.NEHRU_JACKET)}>{catalogName.NEHRU_JACKET}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.KURTA)}>{catalogName.KURTA}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.TROUSER)}>{catalogName.TROUSER}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.SHIRT)}>{catalogName.SHIRT}</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown><Divider />
+
+                <Icon style={{paddingRight: '1.3em'}} name='th'/>
+                <Dropdown text='Shop by Occasion' pointing='top right' className='link item'>
+                    <Dropdown.Menu>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.FESTIVES)}>{catalogName.FESTIVES}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.REGULAR)}>{catalogName.REGULAR}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.HALDI)}>{catalogName.HALDI}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.MEHENDI)}>{catalogName.MEHENDI}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.ENGAGEMENT)}>{catalogName.ENGAGEMENT}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => handleNavigation(navigationLinks.WEDDING)}>{catalogName.WEDDING}</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown><Divider />
 

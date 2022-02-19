@@ -30,7 +30,7 @@ const SendUsFeedbackPage = () => {
 
     return (
         <div style={{paddingTop: '3.5em'}}>
-            <div id='PageTitle' style={{backgroundColor: "#E8E8E8", paddingLeft: "1.5em", paddingTop: '1em', marginBottom: '1em'}}>
+            <div id='PageTitle' style={{backgroundColor: "#e9f1f9", paddingLeft: "1.5em", paddingTop: '1em', marginBottom: '1em'}}>
                 <Row><Title level={4}>{commonConstants.SEND_US_YOUR_FEEDBACK}</Title></Row>
             </div>
 

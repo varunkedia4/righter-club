@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
-import {Input, Row, Typography, Col, Button, Drawer} from "antd";
+import {Input, Row, Typography, Col, Button, Drawer, message} from "antd";
 import {useNavigate} from "react-router-dom";
 import {navigationLinks} from "../../../constants/NavigationLinks";
 import SizeChart from "../../common/SizeChart";
+import {submitRequest} from "../../../api/SubmitRequestAPI";
+import {emailSubject} from "../../../constants/Common";
 
 const StandardSize = (props) => {
 
@@ -24,6 +26,7 @@ const StandardSize = (props) => {
 
     const customerDetails = name + " | " + phoneNumber
     const customerResponse = preferredSize + " | " + address
+    const productId = props.productCode + '00' + props.designNumber;
 
     const getSelectedSizeText = () => {
         if(preferredSize === "") return (<Text type={'danger'}> Please select your preferred size </Text>)
@@ -34,9 +37,9 @@ const StandardSize = (props) => {
         if(name === "" || phoneNumber === "" || preferredSize === "" || address === "") {
             setWarningHidden(false);
         } else {
-            const navigationLink = navigationLinks.ORDER_CONFIRMATION + props.catalogCode + "." +
-                props.productCode + "." + props.designNumber + "." + "2" + "." + customerDetails + "." + customerResponse;
-            navigate(navigationLink);
+            message.loading({content: 'Placing your order...', style: { marginTop: '12vh'}}, 2);
+            setTimeout(() => {navigate(navigationLinks.THANK_YOU)}, 2000);
+            submitRequest(emailSubject.STITCH_TO_FIT, customerDetails, productId, customerResponse);
         }
     }
 
@@ -44,8 +47,8 @@ const StandardSize = (props) => {
         <div style={{paddingTop: '1em', paddingLeft: '1.5em', paddingBottom: '2em', paddingRight: '1.5em'}}>
             <div>
                 <Row>
-                    <Col span={19}><Text strong> Select Size </Text></Col>
-                    <Col span={5}><Link onClick={() => setSizeChartDrawerOpen(true)}> Size Chart  </Link></Col>
+                    <Col span={18}><Text strong> Select Size </Text></Col>
+                    <Col span={6}><Link onClick={() => setSizeChartDrawerOpen(true)}> SIZE CHART  </Link></Col>
                     <Drawer placement="bottom" height={650} onClose={() => setSizeChartDrawerOpen(false)} visible={isSizeChartDrawerOpen}>
                         <SizeChart />
                     </Drawer>
@@ -55,7 +58,7 @@ const StandardSize = (props) => {
             <div style={{paddingBottom: '1em'}}>
                 <div style={{paddingBottom: '1em', paddingTop: '1em'}}>
                     <Row>
-                        <Col offset={2}> <Button shape="round" onClick={() => setPreferredSize("S")}> S </Button> </Col>
+                        <Col offset={1}> <Button shape="round" onClick={() => setPreferredSize("S")}> S </Button> </Col>
                         <Col offset={1}> <Button shape="round" onClick={() => setPreferredSize("M")}> M </Button> </Col>
                         <Col offset={1}> <Button shape="round" onClick={() => setPreferredSize("L")}> L </Button> </Col>
                         <Col offset={1}> <Button shape="round" onClick={() => setPreferredSize("XL")}> XL </Button> </Col>
@@ -70,7 +73,7 @@ const StandardSize = (props) => {
                 <Input placeholder="Phone Number" onChange={handlePhoneNumberChange} /><br/><br/>
                 <TextArea autoSize={{ minRows: 3}} placeholder="Delivery Address" onChange={handleAddressChange} /><br/><br/>
                 <div id='ScheduleMeasurementButton' style={{paddingLeft: "4em", paddingRight: '4em'}}>
-                    <Row><Button type={'primary'} shape="round" block onClick={handleBuyNowClick}>Confirm Order Details</Button></Row>
+                    <Row><Button type={'primary'} shape="round" block onClick={handleBuyNowClick}>Buy Now</Button></Row>
                 </div>
                 <div style={{paddingTop: '1em'}} hidden={isWarningHidden}>
                     <Row justify={'center'}>

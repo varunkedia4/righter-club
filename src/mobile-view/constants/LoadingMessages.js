@@ -1,0 +1,40 @@
+export const getLoadingMessage = () => {
+    return messages[Math.round(Math.random()*(messages.length-1))];
+}
+
+export const messages = [
+    "Generating witty dialog...",
+    "Just count to 10",
+    "Why so serious?",
+    "It's not you. It's me",
+    "Do not run! We are your friends!",
+    "Loading the enchanted bunny...",
+    "I swear it's almost done",
+    "Wait, do you smell something burning?",
+    "When nothing is going right, go left!!",
+    "I love my job only when I'm on vacation...",
+    "I'm not lazy, I'm just relaxed!!",
+    "I’ve got problem for your solution…..",
+    "Where there’s a will, there’s a relative",
+    "Adults are just kids with money",
+    "I think I am, therefore, I am. I think", ,
+    "I'm going to walk the dog",
+    "Looking for sense of humour, please hold on.",
+    "Please hold on as we reheat our coffee",
+    "Distracted by cat gifs",
+    "Finding someone to hold my beer",
+    "Loading funny message...",
+    "Feel free to spin in your chair",
+    "You seem like a nice person...",
+    "TODO: Insert loading music",
+    "Still faster than Windows update",
+    "Please wait while the minions do their work",
+    "Grabbing extra minions",
+    "Doing the heavy lifting",
+    "We're working very Hard .... Really",
+    "Waking up the minions",
+    "Feeding unicorns...",
+    "Keep Calm & Wait",
+    "Fighting the dragon",
+    "Something's happening..."
+];

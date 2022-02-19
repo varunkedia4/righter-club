@@ -7,12 +7,12 @@ const HowItWorks = () => {
     const { Text } = Typography;
 
     return(
-        <div style={{paddingLeft: '2.5em', paddingRight: '1.5em', paddingTop: '1.5em', paddingBottom: '1.5em', marginBottom: '2em', backgroundColor: '#F8F8F8'}}>
+        <div style={{paddingLeft: '2.5em', paddingRight: '1.5em', paddingTop: '1em', marginBottom: '2em'}}>
             <div style={{paddingBottom: '1em'}}>
                 <Row justify={'center'} align="middle">
                     <Col span={4}> <AppstoreAddOutlined style={{fontSize: '2em'}} /> </Col>
                     <Col span={20}>
-                        <Row> <Text strong> Select Fabric & Design </Text></Row>
+                        <Row> <Text type={'secondary'}strong> Select Fabric & Design </Text></Row>
                         <Row> <Text type={'secondary'}> from our hand picked collections </Text> </Row>
                     </Col>
                 </Row>
@@ -22,7 +22,7 @@ const HowItWorks = () => {
                 <Row justify={'center'} align="middle">
                     <Col span={4}> <CalculatorOutlined style={{fontSize: '2em'}} /> </Col>
                     <Col span={20}>
-                        <Row> <Text strong> Schedule Measurement </Text></Row>
+                        <Row> <Text type={'secondary'} strong> Schedule Measurement </Text></Row>
                         <Row>
                             <Text type={'secondary'}> at place of your convenience</Text>
                         </Row>
@@ -34,7 +34,7 @@ const HowItWorks = () => {
                 <Row justify={'center'} align="middle">
                     <Col span={4}> <ScissorOutlined style={{fontSize: '2em'}} /> </Col>
                     <Col span={20}>
-                        <Row> <Text strong> Sit back & relax </Text></Row>
+                        <Row> <Text type={'secondary'} strong> Sit back & relax </Text></Row>
                         <Row> <Text type={'secondary'}> while our experts stitch outfit to your fit </Text> </Row>
                     </Col>
                 </Row>
@@ -44,7 +44,7 @@ const HowItWorks = () => {
                 <Row justify={'center'} align="middle">
                     <Col span={4}> <SmileOutlined style={{fontSize: '2em'}} /> </Col>
                     <Col span={20}>
-                        <Row> <Text strong> Make Payment </Text></Row>
+                        <Row> <Text type={'secondary'} strong> Make Payment </Text></Row>
                         <Row> <Text type={'secondary'}> only after 100% satisfaction</Text> </Row>
                     </Col>
                 </Row>

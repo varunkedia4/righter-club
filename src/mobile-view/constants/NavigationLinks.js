@@ -3,24 +3,28 @@ export const navigationLinks = {
 
     HOME: "/",
 
-    KURTA: "/categories/kurta",
     SHERWANI: "/categories/sherwani",
-    NEHRU_JACKET: "/categories/nehruJacket",
     JODHPURI: "/categories/jodhpuri",
-    SUIT: "/categories/suit",
-    SUIT_WITH_VEST: "/categories/suitWithVest",
+    NEHRU_JACKET: "/categories/nehruJacket",
+    KURTA: "/categories/kurta",
+    TWO_PIECE_SUIT: "/categories/twoPieceSuit",
+    THREE_PIECE_SUIT: "/categories/threePieceSuit",
+    CASUAL_BLAZER: "/categories/casualBlazer",
+    TUXEDO: "/categories/tuxedo",
+    TROUSER: "/categories/trouser",
+    SHIRT: "/categories/shirt",
 
-    MEHENDI: "/occasions/mehendi",
+    FESTIVES: "/occasions/festives",
+    REGULAR: "/occasions/regular",
     HALDI: "/occasions/haldi",
+    MEHENDI: "/occasions/mehendi",
     ENGAGEMENT: "/occasions/engagement",
     WEDDING: "/occasions/wedding",
-    DIWALI: "/occasions/diwali",
-    HOLI: "/occasions/holi",
 
     CATEGORIES: "/categories/",
     PRODUCT: "/product/",
     OCCASIONS: "/occasions/",
-    PROCEED_TO_BUY: "/proceed-to-buy/",
+    PLACE_YOUR_ORDER: "/place-your-order/",
     ORDER_CONFIRMATION: "/order-confirmation/",
 
     SECURE_PAYMENT: "/secure-payment",
@@ -38,6 +42,8 @@ export const navigationLinks = {
     PAYMENT_POLICY: '/payment-policy',
     THANK_YOU: '/thank-you',
     EXPLORE_RIGHTER: '/explore-righter',
+    GET_STARTED: '/get-started',
+    SMART_BODY_MEASUREMENT: '/smart-body-measurement',
 
     BLOGS: "/blogs",
     BLOGS_ONE: "/blogs/why-online-cloth-purchasing-has-the-slowest-adoption-across-the-categories",
@@ -46,9 +52,11 @@ export const navigationLinks = {
     BLOGS_FOUR: "/blogs/an-open-letter-to-a-to-be-groom",
     BLOGS_FIVE: "/blogs/how-i-choose-my-outfit-for-the-wedding-event-of-my-friend",
     BLOGS_SIX: "/blogs/best-places-to-do-wedding-shopping-for-men-in-bangalore",
+    BLOGS_SEVEN: "/blogs/8-things-to-keep-in-mind-while-purchasing-a-mens-suit",
 
     FACEBOOK: "https://www.facebook.com/righter.club/",
     INSTAGRAM: "https://www.instagram.com/righter.club/",
     LINKED_IN: "https://www.linkedin.com/company/righter/",
-    WHATSAPP: "https://wa.me/918591436681"
+    WHATSAPP: "https://wa.me/918591436681",
+    WHATSAPP_SUVIGNA: "https://wa.me/918369647135"
 }

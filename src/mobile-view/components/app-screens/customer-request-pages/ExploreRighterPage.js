@@ -37,7 +37,7 @@ const ExploreRighterPage = () => {
     return (
         <div style={{paddingTop: '3.5em', paddingBottom: '2em'}}>
             <div>
-                <Header style={{ paddingLeft: '1em', position: 'fixed', zIndex: 1, height: headerHeight, width: '100%', backgroundColor: '#E8E8E8'}}>
+                <Header style={{ paddingLeft: '1em', position: 'fixed', zIndex: 1, height: headerHeight, width: '100%', backgroundColor: '#e9f1f9'}}>
                     <div style={{paddingTop: '0.5em'}}>
                         <Row align={'middle'}>
                             <Col span={16}>

@@ -10,20 +10,16 @@ const CatalogCard = (props) => {
     }, []);
 
     const navigate = useNavigate();
-    const handleNavigation = (navigationLink) => {
-        navigate(navigationLink);
-    }
+    const handleNavigation = (navigationLink) => { navigate(navigationLink);}
 
     const { Text } = Typography;
 
     return (
         <div style={{display: "inline-block", paddingRight: "1em" }}>
-            <Card bordered={false} onClick={() => handleNavigation(props.navigationLink)} style={{ width: 230}}>
+            <Card bordered={false} onClick={() => handleNavigation(props.navigationLink)}>
                 <Image preview={false} src={props.imageLink} />
             </Card>
-            <Row justify={'center'}>
-                <Text strong> {props.cardName} </Text>
-            </Row>
+            <Row justify={'center'}><Text strong> {props.cardName} </Text></Row>
         </div>
     );
 };

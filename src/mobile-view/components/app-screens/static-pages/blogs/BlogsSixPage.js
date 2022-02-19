@@ -13,7 +13,7 @@ const BlogsSixPage = () => {
 
     return (
         <div style={{paddingTop: '3.5em'}}>
-            <div id='BlogTitle' style={{backgroundColor: "#E8E8E8", paddingTop: '1.5em', marginBottom: '1em', textAlign: 'center', paddingBottom: '1em'}}>
+            <div id='BlogTitle' style={{backgroundColor: "#e9f1f9", paddingTop: '1.5em', marginBottom: '1em', textAlign: 'center', paddingBottom: '1em'}}>
                 <Title level={5}>{blogsTitle.SIX}</Title>
                 <Text>{blogsWriter.SIX + " | " + blogsReadTime.SIX}</Text>
             </div>

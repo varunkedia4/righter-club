@@ -18,6 +18,8 @@ import BuyingOptions from "./BuyingOptions";
 import CustomDivider from "../../common/CustomDivider";
 import LazyLoad from "react-lazyload";
 import { Alert } from 'antd';
+import NeedAssistanceBanner from "./NeedAssistanceBanner";
+import {navigationLinks} from "../../../constants/NavigationLinks";
 
 const ProductPage = () => {
 
@@ -33,28 +35,31 @@ const ProductPage = () => {
     const designDetails = getDesignDetailsFromDesignNumberAndProductDetails(designNumber, productDetails);
     const designCount = productDetails.designDetails.length;
 
+    const whatsAppNavigationLink = navigationLinks.WHATSAPP + "/?text=Hi Righter! I want to see fabric samples. Help me get started."
+
     return(
         <div style={{paddingTop: '3.5em', paddingBottom: '2em'}}>
 
             <Alert banner type={'info'}
                 message={
                     <Marquee pauseOnHover gradient={false}>
-                        Get Flat ₹500 Off On Your First Order
+                        <a style={{paddingRight: '0.4em'}} href={whatsAppNavigationLink}>Chat with us</a> to see the fabric sample
                     </Marquee>
                 }
             />
 
             <ProductImages designDetails={designDetails}/>
-            <NameAndPrice productDetails={productDetails} designNumber={designNumber} catalogCode={catalogCode}/><CustomDivider />
+            <NameAndPrice productDetails={productDetails} designNumber={designNumber} catalogCode={catalogCode}/>
+            <BuyingOptions productId={id}/><CustomDivider />
             {
                 (designCount > 1) &&
                 <div>
                     <MoreDesigns productDetails={productDetails} catalogCode={catalogCode} closeDrawer={() => {}}/><CustomDivider />
                 </div>
             }
-            <BuyingOptions productId={id}/><CustomDivider />
             <DeliveryAndReturns productDetails={productDetails}/><CustomDivider />
             <FabricDetails productDetails={productDetails}/><CustomDivider />
+            <NeedAssistanceBanner /><CustomDivider />
             <LazyLoad height={200} once >
                 <CustomersAlsoLiked catalogCode={catalogCode}/>
             </LazyLoad>

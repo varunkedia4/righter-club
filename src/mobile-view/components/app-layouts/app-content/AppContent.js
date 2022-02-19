@@ -18,14 +18,16 @@ import BlogsTwoPage from "../../app-screens/static-pages/blogs/BlogsTwoPage";
 import BlogsThreePage from "../../app-screens/static-pages/blogs/BlogsThreePage";
 import BlogsFourPage from "../../app-screens/static-pages/blogs/BlogsFourPage";
 import BlogsFivePage from "../../app-screens/static-pages/blogs/BlogsFivePage";
-import ProceedToBuyPage from "../../app-screens/proceed-to-buy-page/ProceedToBuyPage";
+import PlaceYourOrderPage from "../../app-screens/place-your-order-page/PlaceYourOrderPage";
 import SecurePaymentPage from "../../app-screens/static-pages/SecurePaymentPage";
 import ShippingPolicyPage from "../../app-screens/static-pages/ShippingPolicyPage";
 import PaymentPolicyPage from "../../app-screens/static-pages/PaymentPolicyPage";
 import BlogsSixPage from "../../app-screens/static-pages/blogs/BlogsSixPage";
 import ThankYouPage from "../../app-screens/static-pages/ThankYouPage";
-import OrderConfirmationPage from "../../app-screens/order-confirmation-page/OrderConfirmationPage";
 import ExploreRighterPage from "../../app-screens/customer-request-pages/ExploreRighterPage";
+import BlogsSevenPage from "../../app-screens/static-pages/blogs/BlogsSevenPage";
+import GetStartedPage from "../../app-screens/customer-request-pages/GetStartedPage";
+import SmartBodyMeasurementPage from "../../app-screens/customer-request-pages/SmartBodyMeasurementPage";
 
 const AppContent = () => {
 
@@ -36,9 +38,8 @@ const AppContent = () => {
                 <Route path={navigationLinks.CATEGORIES + navigationLinks.ID} element={<CatalogPage catalogContent={"Category"}/>}/>
                 <Route path={navigationLinks.OCCASIONS + navigationLinks.ID} element={<CatalogPage catalogContent={"Occasion"}/>}/>
                 <Route path={navigationLinks.PRODUCT + navigationLinks.ID} element={<ProductPage/>} />
-                <Route path={navigationLinks.PROCEED_TO_BUY + navigationLinks.ID} element={<ProceedToBuyPage/>} />
+                <Route path={navigationLinks.PLACE_YOUR_ORDER + navigationLinks.ID} element={<PlaceYourOrderPage/>} />
                 <Route path={navigationLinks.THANK_YOU} element={<ThankYouPage />} />
-                <Route path={navigationLinks.ORDER_CONFIRMATION + navigationLinks.ID} element={<OrderConfirmationPage />} />
                 <Route path={navigationLinks.SECURE_PAYMENT} element={<SecurePaymentPage />} />
                 <Route path={navigationLinks.HELP_ME_CHOOSE} element={<HelpMeChoosePage />} />
                 <Route path={navigationLinks.PRIVACY_POLICY} element={<PrivacyPolicyPage />} />
@@ -57,7 +58,10 @@ const AppContent = () => {
                 <Route path={navigationLinks.BLOGS_FOUR} element={<BlogsFourPage />} />
                 <Route path={navigationLinks.BLOGS_FIVE} element={<BlogsFivePage />} />
                 <Route path={navigationLinks.BLOGS_SIX} element={<BlogsSixPage />} />
+                <Route path={navigationLinks.BLOGS_SEVEN} element={<BlogsSevenPage />} />
                 <Route path={navigationLinks.EXPLORE_RIGHTER} element={<ExploreRighterPage />} />
+                <Route path={navigationLinks.GET_STARTED} element={<GetStartedPage />} />
+                <Route path={navigationLinks.SMART_BODY_MEASUREMENT} element={<SmartBodyMeasurementPage />} />
             </Routes>
         </div>
     );

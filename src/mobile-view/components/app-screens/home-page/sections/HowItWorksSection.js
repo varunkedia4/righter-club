@@ -7,11 +7,9 @@ const HowItWorksSection = () => {
     const { Title } = Typography;
 
     return(
-        <div style={{paddingTop: '2em'}}>
+        <div style={{paddingTop: '1.5em'}}>
             <Title level={4} style={{textAlign: 'center'}}> How it Works </Title>
-            <div style={{paddingTop: '1.3em'}}>
-                <HowItWorks />
-            </div>
+            <div><HowItWorks /></div>
         </div>
     );
 };

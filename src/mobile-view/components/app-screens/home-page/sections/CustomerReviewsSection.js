@@ -1,20 +1,23 @@
 import React from 'react'
-import {Card, Row, Col, Typography} from "antd";
+import {Card, Row, Col, Typography, Button} from "antd";
 import WhyRighter from "../../../common/WhyRighter";
 import {StarOutlined} from '@ant-design/icons';
+import CustomDivider from "../../../common/CustomDivider";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const CustomerReviewsSection = () => {
 
     const { Title, Text } = Typography;
 
     return(
-        <div id='HearItFromCustomersSection' style={{paddingBottom: '2.5em', paddingTop: '0.5em'}}>
-            <Title level={4} style={{textAlign: 'center', paddingBottom: '1em'}}> Why Righter </Title>
+        <div id='HearItFromCustomersSection' style={{paddingBottom: '2.5em', paddingTop: '1.5em'}}>
+            <Title level={4} style={{textAlign: 'center'}}> Why Righter </Title>
             <WhyRighter />
-            <Title level={4} style={{textAlign: 'center', paddingBottom: '0.5em'}}> Unfiltered Reviews </Title>
+            <CustomDivider />
+            <Title level={4} style={{textAlign: 'center', paddingTop: '1em', paddingBottom: '0.5em'}}> Unfiltered Reviews </Title>
             <div style={{overflow: "auto", whiteSpace: "nowrap", paddingLeft: '1em', paddingTop: '0.5em'}}>
                 <div style={{display: "inline-block", paddingRight: "1em" }}>
-                    <Card>
+                    <Card style={{padding: '1em'}}>
                         <div style={{paddingBottom: '1em'}}>
                             <Row>
                                 <Col span={21}><Text type={'secondary'}>Likhita, Mumbai</Text></Col>
@@ -33,7 +36,7 @@ const CustomerReviewsSection = () => {
                 </div>
 
                 <div style={{display: "inline-block", paddingRight: "1em" }}>
-                    <Card>
+                    <Card style={{padding: '1em'}}>
                         <div style={{paddingBottom: '1em'}}>
                             <Row>
                                 <Col span={21}><Text type={'secondary'}>Vivek, Bangalore</Text></Col>
@@ -53,7 +56,7 @@ const CustomerReviewsSection = () => {
                 </div>
 
                 <div style={{display: "inline-block", paddingRight: "1em" }}>
-                    <Card>
+                    <Card style={{padding: '1em'}}>
                         <div style={{paddingBottom: '1em'}}>
                             <Row>
                                 <Col span={21}><Text type={'secondary'}>Rajarshi, Bangalore</Text></Col>
@@ -73,7 +76,7 @@ const CustomerReviewsSection = () => {
                 </div>
 
                 <div style={{display: "inline-block", paddingRight: "1em" }}>
-                    <Card>
+                    <Card style={{padding: '1em'}}>
                         <div style={{paddingBottom: '1em'}}>
                             <Row>
                                 <Col span={21}><Text type={'secondary'}>Ashish, Pune</Text></Col>
@@ -91,6 +94,11 @@ const CustomerReviewsSection = () => {
                         </div>
                     </Card>
                 </div>
+            </div>
+            <div style={{paddingTop: '2.5em', paddingLeft: '2em', paddingRight: '2em'}}>
+                <AnchorLink offset={() => 45} href='#ShopByCategorySection'>
+                    <Button type={'primary'} shape={'round'} block> Start Shopping </Button>
+                </AnchorLink>
             </div>
         </div>
     );

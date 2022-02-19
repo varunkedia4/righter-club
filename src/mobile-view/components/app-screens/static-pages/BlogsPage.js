@@ -18,7 +18,7 @@ const BlogsPage = () => {
 
     return (
         <div style={{paddingTop: '3.5em'}}>
-            <div id='PageTitle' style={{backgroundColor: "#E8E8E8", paddingLeft: "1.5em", paddingTop: '1em', marginBottom: '1em'}}>
+            <div id='PageTitle' style={{backgroundColor: "#e9f1f9", paddingLeft: "1.5em", paddingTop: '1em', marginBottom: '1em'}}>
                 <Row><Title level={4}>{commonConstants.BLOGS}</Title></Row>
             </div>
 
@@ -45,6 +45,10 @@ const BlogsPage = () => {
 
                 <Card style={{ marginBottom: '1em' }} onClick={() => handleNavigation(navigationLinks.BLOGS_SIX)}>
                     <p>{blogsTitle.SIX}</p><Meta description={blogsWriter.SIX + "  |  " + blogsReadTime.SIX}/>
+                </Card>
+
+                <Card style={{ marginBottom: '1em' }} onClick={() => handleNavigation(navigationLinks.BLOGS_SEVEN)}>
+                    <p>{blogsTitle.SEVEN}</p><Meta description={blogsWriter.SEVEN + "  |  " + blogsReadTime.SEVEN}/>
                 </Card>
             </div>
         </div>

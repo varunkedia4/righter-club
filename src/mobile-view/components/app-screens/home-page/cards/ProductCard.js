@@ -7,6 +7,7 @@ import {
 } from "../../../../util/CommonUtils";
 import {navigationLinks} from "../../../../constants/NavigationLinks";
 
+//Not in use currently
 const ProductCard = (props) => {
 
     useEffect(() => {
@@ -25,7 +26,7 @@ const ProductCard = (props) => {
 
     return (
         <div style={{display: "inline-block", paddingRight: "1em" }}>
-            <a href={navigationLink} target="_blank">
+            <a href={navigationLink}>
                 <Card style={{width: 200}}>
                     <Image preview={false} width={"100%"} src={designDetails.imageLinks[0]}/>
                 </Card>
