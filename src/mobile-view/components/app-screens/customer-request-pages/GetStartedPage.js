@@ -10,6 +10,7 @@ import {UserOutlined} from '@ant-design/icons';
 import {useNavigate} from "react-router-dom";
 import {getCategoryNameFromCategoryCode, getNavigationLinkFromCategoryCode} from "../../../util/CommonUtils";
 import {submitRequest} from "../../../api/SubmitRequestAPI";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const ThankYouModal = (props) => {
 
@@ -45,7 +46,7 @@ const ThankYouModal = (props) => {
 
 const GetStartedPage = () => {
 
-    useEffect(() => {document.title = commonConstants.GET_STARTED}, []);
+    useEffect(() => {document.title = pageTitles.GET_STARTED}, []);
     ReactGA.send({hitType: "pageview"});
 
     const {Title, Text} = Typography;

@@ -56,7 +56,9 @@ export const commonConstants = {
     THANK_YOU: 'Thank you',
     EXPLORE_RIGHTER: "Explore Righter",
     GET_STARTED: "Get Started",
-    SMART_BODY_MEASUREMENT: "Smart Body Measurement"
+    SMART_BODY_MEASUREMENT: "Smart Body Measurement",
+    SITEMAP: "Sitemap",
+    ROBOTS: "Crawler"
 }
 
 export const catalogName = {

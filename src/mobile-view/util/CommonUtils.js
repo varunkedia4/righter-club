@@ -3,6 +3,7 @@ import {message} from "antd";
 import {getColorFilteredList, getFabricPatternFilteredList,
     getFabricTypeFilteredList, getPriceRangeFilteredList} from "./FilteringUtil";
 import {navigationLinks} from "../constants/NavigationLinks";
+import {pageTitles} from "../constants/seo/PageTitles";
 
 export const generateRandomDesignNumber = (inputProductCode) => {
     let inputCategoryCode = inputProductCode.slice(-2);
@@ -226,6 +227,42 @@ export const getCatalogNameFromCatalogCode = (inputCatalogCode) => {
         return catalogName.ENGAGEMENT;
     } else if(inputCatalogCode === catalogCode.WEDDING) {
         return catalogName.WEDDING;
+    }
+}
+
+export const getCatalogPageTitleFromCatalogCode = (inputCatalogCode) => {
+    if(inputCatalogCode === catalogCode.SHERWANI) {
+        return pageTitles.SHERWANI;
+    } else if(inputCatalogCode === catalogCode.JODHPURI) {
+        return pageTitles.JODHPURI;
+    } else if(inputCatalogCode === catalogCode.NEHRU_JACKET) {
+        return pageTitles.NEHRU_JACKET;
+    } else if(inputCatalogCode === catalogCode.KURTA) {
+        return pageTitles.KURTA;
+    } else if(inputCatalogCode === catalogCode.TWO_PIECE_SUIT) {
+        return pageTitles.TWO_PIECE_SUIT;
+    } else if(inputCatalogCode === catalogCode.THREE_PIECE_SUIT) {
+        return pageTitles.THREE_PIECE_SUIT;
+    } else if(inputCatalogCode === catalogCode.CASUAL_BLAZER) {
+        return pageTitles.CASUAL_BLAZER;
+    } else if(inputCatalogCode === catalogCode.TUXEDO) {
+        return pageTitles.TUXEDO;
+    } else if(inputCatalogCode === catalogCode.TROUSER) {
+        return pageTitles.TROUSER;
+    } else if(inputCatalogCode === catalogCode.SHIRT) {
+        return pageTitles.SHIRT;
+    } else if(inputCatalogCode === catalogCode.FESTIVES) {
+        return pageTitles.FESTIVES;
+    } else if(inputCatalogCode === catalogCode.REGULAR) {
+        return pageTitles.REGULAR;
+    } else if(inputCatalogCode === catalogCode.HALDI) {
+        return pageTitles.HALDI;
+    } else if(inputCatalogCode === catalogCode.MEHENDI) {
+        return pageTitles.MEHENDI;
+    } else if(inputCatalogCode === catalogCode.ENGAGEMENT) {
+        return pageTitles.ENGAGEMENT;
+    } else if(inputCatalogCode === catalogCode.WEDDING) {
+        return pageTitles.WEDDING;
     }
 }
 

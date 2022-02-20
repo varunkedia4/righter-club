@@ -9,10 +9,11 @@ import {
 } from '@ant-design/icons';
 import {submitRequest} from "../../../api/SubmitRequestAPI";
 import {getConfirmationMessage} from "../../../util/CommonUtils";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const CustomerSupportPage = () => {
 
-    useEffect(() => { document.title = commonConstants.CUSTOMER_SUPPORT }, []);
+    useEffect(() => { document.title = pageTitles.CUSTOMER_SUPPORT }, []);
     ReactGA.send({ hitType: "pageview"});
 
     const { Text, Title, Link } = Typography;

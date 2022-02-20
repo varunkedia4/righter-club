@@ -4,10 +4,11 @@ import {commonConstants} from "../../../constants/Common";
 import {Alert, Row, Typography} from "antd";
 import {navigationLinks} from "../../../constants/NavigationLinks";
 import ResizeAndReturnTerms from "../../common/ResizeAndReturnTerms";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const ResizeAndReturnPolicyPage = () => {
 
-    useEffect(() => { document.title = commonConstants.RESIZE_AND_RETURN_POLICY }, []);
+    useEffect(() => { document.title = pageTitles.RESIZE_AND_RETURN_POLICY }, []);
     ReactGA.send({ hitType: "pageview"});
 
     const { Title } = Typography;

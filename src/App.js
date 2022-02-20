@@ -1,6 +1,6 @@
 import React, {Suspense, lazy} from 'react';
-import { useMediaQuery } from 'react-responsive'
-import DesktopApp from "./desktop-view/DesktopApp";
+// import { useMediaQuery } from 'react-responsive'
+// import DesktopApp from "./desktop-view/DesktopApp";
 import { Spin , Row} from 'antd';
 
 import ReactGA from "react-ga4";
@@ -20,17 +20,20 @@ const LoaderScreen = () => {
 
 const App = () => {
 
-    const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' })
-    const isMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    // const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' })
+    // const isMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     return (
         <div className="App">
-            { isMobile &&
-                <Suspense fallback={<LoaderScreen />}>
-                    <MobileApp />
-                </Suspense>
-            }
-            { isDesktop && <DesktopApp /> }
+            {/*{ isMobile &&*/}
+            {/*    <Suspense fallback={<LoaderScreen />}>*/}
+            {/*        <MobileApp />*/}
+            {/*    </Suspense>*/}
+            {/*}*/}
+            {/*{ isDesktop && <DesktopApp /> }*/}
+            <Suspense fallback={<LoaderScreen />}>
+                <MobileApp />
+            </Suspense>
         </div>
     );
 };

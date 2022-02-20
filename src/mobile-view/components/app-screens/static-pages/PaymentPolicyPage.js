@@ -2,10 +2,11 @@ import React, {useEffect} from 'react';
 import {Collapse, Row, Typography} from "antd";
 import {commonConstants} from "../../../constants/Common";
 import ReactGA from "react-ga4";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const PaymentPolicyPage = () => {
 
-    useEffect(() => { document.title = commonConstants.PAYMENT_POLICY }, []);
+    useEffect(() => { document.title = pageTitles.PAYMENT_POLICY }, []);
     ReactGA.send({ hitType: "pageview"});
 
     const { Title } = Typography;

@@ -3,10 +3,11 @@ import {Row, Typography, Collapse} from "antd";
 import {commonConstants} from "../../../constants/Common";
 import ReactGA from "react-ga4";
 import {navigationLinks} from "../../../constants/NavigationLinks";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const ShippingPolicyPage = () => {
 
-    useEffect(() => { document.title = commonConstants.SHIPPING_POLICY }, []);
+    useEffect(() => { document.title = pageTitles.SHIPPING_POLICY }, []);
     ReactGA.send({ hitType: "pageview"});
 
     const { Title } = Typography;

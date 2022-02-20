@@ -9,10 +9,11 @@ import OfferModal from "./OfferModal";
 import HowItWorksSection from "./sections/HowItWorksSection";
 import CustomerReviewsSection from "./sections/CustomerReviewsSection";
 import CustomDivider from "../../common/CustomDivider";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const HomepagePage = () => {
 
-    useEffect(() => { document.title = commonConstants.RIGHTER }, []);
+    useEffect(() => { document.title = pageTitles.HOME }, []);
     ReactGA.send({ hitType: "pageview"});
 
     return (

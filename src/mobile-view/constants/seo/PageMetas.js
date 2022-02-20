@@ -1,11 +1,5 @@
-export const navigationLinks = {
-    ID: ":id",
-
+export const pageMetas = {
     HOME: "/",
-
-    SITEMAP: "/sitemap.txt",
-    ROBOTS: "/robots.txt",
-
     SHERWANI: "/categories/sherwani",
     JODHPURI: "/categories/jodhpuri",
     NEHRU_JACKET: "/categories/nehruJacket",
@@ -16,38 +10,21 @@ export const navigationLinks = {
     TUXEDO: "/categories/tuxedo",
     TROUSER: "/categories/trouser",
     SHIRT: "/categories/shirt",
-
     FESTIVES: "/occasions/festives",
     REGULAR: "/occasions/regular",
     HALDI: "/occasions/haldi",
     MEHENDI: "/occasions/mehendi",
     ENGAGEMENT: "/occasions/engagement",
     WEDDING: "/occasions/wedding",
-
-    CATEGORIES: "/categories/",
-    PRODUCT: "/product/",
-    OCCASIONS: "/occasions/",
-    PLACE_YOUR_ORDER: "/place-your-order/",
-    ORDER_CONFIRMATION: "/order-confirmation/",
-
-    SECURE_PAYMENT: "/secure-payment",
-
-    HELP_ME_CHOOSE: "/help-me-choose",
     PRIVACY_POLICY: "/privacy-policy",
     CUSTOMER_SUPPORT: "/customer-support",
     TERMS_AND_CONDITIONS: "/terms-and-conditions",
     ABOUT_US: "/about-us",
     FAQS: "/faqs",
-    SEND_US_YOUR_FEEDBACK: "/send-us-your-feedback",
     RESIZE_AND_RETURN_POLICY: "/resize-and-return-policy",
-    SIZE_CHART: "/size-chart",
     SHIPPING_POLICY: '/shipping-policy',
     PAYMENT_POLICY: '/payment-policy',
-    THANK_YOU: '/thank-you',
-    EXPLORE_RIGHTER: '/explore-righter',
     GET_STARTED: '/get-started',
-    SMART_BODY_MEASUREMENT: '/smart-body-measurement',
-
     BLOGS: "/blogs",
     BLOGS_ONE: "/blogs/why-online-cloth-purchasing-has-the-slowest-adoption-across-the-categories",
     BLOGS_TWO: "/blogs/is-the-big-indian-wedding-market-rip-enough-for-a-big-shift",
@@ -55,11 +32,5 @@ export const navigationLinks = {
     BLOGS_FOUR: "/blogs/an-open-letter-to-a-to-be-groom",
     BLOGS_FIVE: "/blogs/how-i-choose-my-outfit-for-the-wedding-event-of-my-friend",
     BLOGS_SIX: "/blogs/best-places-to-do-wedding-shopping-for-men-in-bangalore",
-    BLOGS_SEVEN: "/blogs/8-things-to-keep-in-mind-while-purchasing-a-mens-suit",
-
-    FACEBOOK: "https://www.facebook.com/righter.club/",
-    INSTAGRAM: "https://www.instagram.com/righter.club/",
-    LINKED_IN: "https://www.linkedin.com/company/righter/",
-    WHATSAPP: "https://wa.me/918591436681",
-    WHATSAPP_SUVIGNA: "https://wa.me/918369647135"
+    BLOGS_SEVEN: "/blogs/8-things-to-keep-in-mind-while-purchasing-a-mens-suit"
 }

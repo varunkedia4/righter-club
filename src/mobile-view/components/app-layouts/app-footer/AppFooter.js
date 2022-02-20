@@ -100,18 +100,6 @@ const AppFooter = () => {
             <Row style={{paddingTop: "1.5em"}}>
                 <Collapse ghost>
                     <Panel header="Tap to learn more about us" showArrow={false}>
-                        <Row style={{paddingTop: "0.5em"}}><Text> Popular Searches </Text></Row>
-                        <Row style={{paddingTop: "0.5em"}}>
-                            <Text type="secondary"> Kurta | Sherwani | Kurta Payjama | Jodhpuri | Jodhpuri Suit | Indo Western Suit | Suits |
-                                Suits with Vest | Three Piece Suit | Nehru Jacket | Modi Jacket | Designer Sherwani |
-                                Celebrity Look Sherwani | Made to Measure Outfits | Bespoke Outfits | Doorstep Measurements |
-                                Stitch to Fit | Custom Fit | Perfect Fit | Free Delivery | Doorstep Delivery | Free Measurement |
-                                Made to Measure Outfits at Home | Measurement at Home | Ethnic Wear | Traditional Wear | Indian Wear |
-                                Outfits for Men | Measurement at Home | Occasion Wear | Wedding Outfits | Wedding | Engagement | Haldi |
-                                Mehendi | Holi | Diwali | Wedding Dress | Groom Wear | Wedding Outfits for Groom
-                            </Text>
-                        </Row>
-
                         <SEOTexts />
                     </Panel>
                 </Collapse>

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
 import ReactGA from "react-ga4";
-import { getCatalogNameFromCatalogCode, getFilteredProductList, getProductListFromCatalogCode } from "../../../util/CommonUtils";
+import { getCatalogPageTitleFromCatalogCode, getFilteredProductList, getProductListFromCatalogCode } from "../../../util/CommonUtils";
 import {Layout, Button, Row, Col, Drawer, Spin} from 'antd';
 import {Dropdown} from 'semantic-ui-react'
 import { BarsOutlined, FilterOutlined } from '@ant-design/icons';
@@ -19,7 +19,7 @@ const CatalogPage = (props) => {
     const [isDataLoading, setDataLoading] = useState(true);
 
     useEffect(() => {
-        document.title = getCatalogNameFromCatalogCode(catalogCode);
+        document.title = getCatalogPageTitleFromCatalogCode(catalogCode);
         setDataLoading(true);
         setTimeout(() => {setDataLoading(false)}, 500);
     }, [catalogCode]);

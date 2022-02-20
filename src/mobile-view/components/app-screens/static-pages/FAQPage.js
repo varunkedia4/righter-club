@@ -3,10 +3,11 @@ import ReactGA from "react-ga4";
 import {commonConstants} from "../../../constants/Common";
 import {Row, Typography, Collapse, Alert} from "antd";
 import {navigationLinks} from "../../../constants/NavigationLinks";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const FAQPage = () => {
 
-    useEffect(() => { document.title = commonConstants.FAQS }, []);
+    useEffect(() => { document.title = pageTitles.FAQS }, []);
     ReactGA.send({ hitType: "pageview"});
 
     const { Title } = Typography;

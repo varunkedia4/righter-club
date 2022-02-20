@@ -5,10 +5,11 @@ import {Row, Typography} from "antd";
 import CustomDivider from "../../common/CustomDivider";
 import WhyRighter from "../../common/WhyRighter";
 import HowItWorks from "../../common/HowItWorks";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const AboutUsPage = () => {
 
-    useEffect(() => { document.title = commonConstants.ABOUT_US }, []);
+    useEffect(() => { document.title = pageTitles.ABOUT_US }, []);
     ReactGA.send({ hitType: "pageview"});
 
     const { Title, Text } = Typography;

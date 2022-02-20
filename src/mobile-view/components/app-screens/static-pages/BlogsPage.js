@@ -5,10 +5,11 @@ import {commonConstants} from "../../../constants/Common";
 import {Row, Typography, Card} from "antd";
 import {blogsTitle, blogsWriter, blogsReadTime} from "../../../constants/Blogs";
 import {navigationLinks} from "../../../constants/NavigationLinks";
+import {pageTitles} from "../../../constants/seo/PageTitles";
 
 const BlogsPage = () => {
 
-    useEffect(() => { document.title = commonConstants.BLOGS }, []);
+    useEffect(() => { document.title = pageTitles.BLOGS }, []);
     ReactGA.send({ hitType: "pageview"});
 
     const navigate = useNavigate();

@@ -1,13 +1,28 @@
 import React from 'react';
-import {Row, Typography} from "antd";
+import {Row, Typography, Col} from "antd";
 import {navigationLinks} from "../../../constants/NavigationLinks";
+import {useNavigate} from "react-router-dom";
+import {catalogName, commonConstants} from "../../../constants/Common";
 
 const SEOTexts = () => {
 
     const { Text } = Typography;
+    const navigate = useNavigate();
 
     return(
         <div>
+            <Row style={{paddingTop: "0.5em"}}><Text> Popular Searches </Text></Row>
+            <Row style={{paddingTop: "0.5em"}}>
+                <Text type="secondary"> Kurta | Sherwani | Kurta Payjama | Jodhpuri | Jodhpuri Suit | Indo Western Suit | Suits |
+                    Suits with Vest | Three Piece Suit | Nehru Jacket | Modi Jacket | Designer Sherwani |
+                    Celebrity Look Sherwani | Made to Measure Outfits | Bespoke Outfits | Doorstep Measurements |
+                    Stitch to Fit | Custom Fit | Perfect Fit | Free Delivery | Doorstep Delivery | Free Measurement |
+                    Made to Measure Outfits at Home | Measurement at Home | Ethnic Wear | Traditional Wear | Indian Wear |
+                    Outfits for Men | Measurement at Home | Occasion Wear | Wedding Outfits | Wedding | Engagement | Haldi |
+                    Mehendi | Holi | Diwali | Wedding Dress | Groom Wear | Wedding Outfits for Groom
+                </Text>
+            </Row>
+
             <Row style={{paddingTop: "1.5em"}}><Text> Shopping occasion wear made easy at Righter </Text></Row>
             <Row style={{paddingTop: "0.5em"}}>
                 <Text type="secondary"> Buying outfits online was never so easy before Righter came into existence especially occasion wear.
@@ -76,6 +91,12 @@ const SEOTexts = () => {
                         <li>Transparency</li>
                     </ol>
                 </Text>
+            </Row>
+
+            <Row style={{paddingTop: "1.5em"}}><Text> Search Engine Optimization </Text></Row>
+            <Row style={{paddingTop: "0.5em"}}>
+                <Col span={12}> <Text type="secondary" onClick={() => navigate(navigationLinks.SITEMAP)}>{commonConstants.SITEMAP}</Text> </Col>
+                <Col span={12}> <Text type="secondary" onClick={() => navigate(navigationLinks.ROBOTS)}>{commonConstants.ROBOTS}</Text> </Col>
             </Row>
         </div>
     );
