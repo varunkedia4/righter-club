@@ -82,13 +82,13 @@ const GetStartedPage = () => {
                 <Row justify="space-around" align="middle">
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('05')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.TWO_PIECE_SUIT} />
+                            <Image alt={'Two Piece Suit'} onClick={() => setOutfitType('05')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.TWO_PIECE_SUIT} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.TWO_PIECE_SUIT}</Text></Row>
                         </AnchorLink>
                     </Col>
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('06')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.THREE_PIECE_SUIT} />
+                            <Image alt={'Three Piece Suit'} onClick={() => setOutfitType('06')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.THREE_PIECE_SUIT} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.THREE_PIECE_SUIT}</Text></Row>
                         </AnchorLink>
                     </Col>
@@ -97,13 +97,13 @@ const GetStartedPage = () => {
                 <Row style={{paddingTop: '1em'}} justify="space-around" align="middle">
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('07')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.CASUAL_BLAZER} />
+                            <Image alt={'Casual Blazer'} onClick={() => setOutfitType('07')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.CASUAL_BLAZER} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.CASUAL_BLAZER}</Text></Row>
                         </AnchorLink>
                     </Col>
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('08')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.TUXEDO} />
+                            <Image alt={'Tuxedo'} onClick={() => setOutfitType('08')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.TUXEDO} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.TUXEDO}</Text></Row>
                         </AnchorLink>
                     </Col>
@@ -112,13 +112,13 @@ const GetStartedPage = () => {
                 <Row style={{paddingTop: '1em'}} justify="space-around" align="middle">
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('01')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.SHERWANI} />
+                            <Image alt={'Sherwani'} onClick={() => setOutfitType('01')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.SHERWANI} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.SHERWANI}</Text></Row>
                         </AnchorLink>
                     </Col>
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('02')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.JODHPURI} />
+                            <Image alt={'Jodhpuri'} onClick={() => setOutfitType('02')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.JODHPURI} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.JODHPURI}</Text></Row>
                         </AnchorLink>
                     </Col>
@@ -127,13 +127,13 @@ const GetStartedPage = () => {
                 <Row style={{paddingTop: '1em'}} justify="space-around" align="middle">
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('03')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.NEHRU_JACKET} />
+                            <Image alt={'Nehru Jacket'} onClick={() => setOutfitType('03')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.NEHRU_JACKET} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.NEHRU_JACKET}</Text></Row>
                         </AnchorLink>
                     </Col>
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('04')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.KURTA} />
+                            <Image alt={'Kurta'} onClick={() => setOutfitType('04')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.KURTA} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.KURTA}</Text></Row>
                         </AnchorLink>
                     </Col>
@@ -142,13 +142,13 @@ const GetStartedPage = () => {
                 <Row style={{paddingTop: '1em'}} justify="space-around" align="middle">
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('09')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.TROUSER} />
+                            <Image alt={'Trouser'} onClick={() => setOutfitType('09')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.TROUSER} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.TROUSER}</Text></Row>
                         </AnchorLink>
                     </Col>
                     <Col span={10}>
                         <AnchorLink offset={() => 50} href='#priceRange'>
-                            <Image onClick={() => setOutfitType('10')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.SHIRT} />
+                            <Image alt={'Shirt'} onClick={() => setOutfitType('10')} preview={false} src={homePageImages.SHOP_BY_CATEGORY.SHIRT} />
                             <Row justify="space-around" align="middle"><Text>{catalogName.SHIRT}</Text></Row>
                         </AnchorLink>
                     </Col>

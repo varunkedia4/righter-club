@@ -22,7 +22,7 @@ const SecurePaymentPage = () => {
             </div>
 
             <div style={{paddingTop: '1em', paddingLeft: '1.5em', paddingRight: '1.5em'}}>
-                <Row justify={'center'}> <Image width={"70%"} src={extraImages.QR_CODE} /> </Row>
+                <Row justify={'center'}> <Image alt={"QR Code"} width={"70%"} src={extraImages.QR_CODE} /> </Row>
             </div>
 
             {/*<div style={{paddingTop: '1em'}}>*/}

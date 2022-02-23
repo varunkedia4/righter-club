@@ -22,7 +22,7 @@ const DesignCard = (props) => {
     return(
         <div>
             <Card href={props.navigationLink} onClick={handleCardClick} style={{ width: 110, marginRight: '0.5em'}}>
-                <Image preview={false} src={props.image}/>
+                <Image alt={props.designName} preview={false} src={props.image}/>
             </Card>
             <div style={{paddingTop: '1em'}}>
                 <Row justify={'center'}> <Text strong type={'secondary'}>{props.designName}</Text> </Row>

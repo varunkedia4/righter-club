@@ -154,7 +154,7 @@ const SizeChart = () => {
             <div style={{paddingBottom: '1em', paddingTop: '1.5em'}}>
                 <Text strong> How to measure yourself</Text>
             </div>
-            <div> <Row justify="center"> <Image width={300} src={extraImages.SIZE_CHART} /> </Row> </div>
+            <div> <Row justify="center"> <Image alt={'HOW TO MEASURE'} width={300} src={extraImages.SIZE_CHART} /> </Row> </div>
         </div>
     );
 };

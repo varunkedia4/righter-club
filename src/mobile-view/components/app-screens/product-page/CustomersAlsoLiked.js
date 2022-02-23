@@ -21,7 +21,7 @@ const ProductCard = (props) => {
     return(
         <div style={{paddingRight: '0.5em'}}>
             <a href={navigationLink}>
-                <Card> <Image style={{width: '100%'}} preview={false} src={props.productDetails.designDetails[designNumber-1].imageLinks[0]}/> </Card>
+                <Card> <Image alt={catalogName} style={{width: '100%'}} preview={false} src={props.productDetails.designDetails[designNumber-1].imageLinks[0]}/> </Card>
                 <Col style={{paddingTop: '0.5em', paddingLeft: '0.5em', paddingBottom: '1em'}}>
                     <Row>
                         <Text strong style={{fontSize: '0.8em', paddingRight: '1em'}}> ₹{props.productDetails.sellingPrice} </Text>

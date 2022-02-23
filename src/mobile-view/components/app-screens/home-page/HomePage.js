@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import ReactGA from "react-ga4";
-import {commonConstants} from "../../../constants/Common";
 import LazyLoad from 'react-lazyload';
 import LandingPageBannerSection from "./sections/LandingBannerSection";
 import ShopByCategorySection from "./sections/ShopByCategorySection";

@@ -59,7 +59,7 @@ const ExploreRighterPage = () => {
                 </Header>
             </div>
             <div style={{paddingTop: '3em'}}>
-                <Image preview={false} onClick={() => navigate(navigationLinks.HOME)} src={extraImages.ADS_POSTER} />
+                <Image alt={'Explore Righter'} preview={false} onClick={() => navigate(navigationLinks.HOME)} src={extraImages.ADS_POSTER} />
             </div>
             <div>
                 <ShopByOccasionSection />

@@ -17,7 +17,7 @@ const CatalogCard = (props) => {
     return (
         <div style={{display: "inline-block", paddingRight: "1em" }}>
             <Card bordered={false} onClick={() => handleNavigation(props.navigationLink)}>
-                <Image preview={false} src={props.imageLink} />
+                <Image alt={props.cardName} preview={false} src={props.imageLink} />
             </Card>
             <Row justify={'center'}><Text strong> {props.cardName} </Text></Row>
         </div>

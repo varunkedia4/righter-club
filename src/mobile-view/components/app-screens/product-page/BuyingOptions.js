@@ -35,7 +35,7 @@ const BuyingOptions = (props) => {
                     <div>
                         <Badge.Ribbon text="Recommended">
                             <Card style={{backgroundColor: '#e9f1f9'}} onClick={() => handleProceedToBuyAction(1)}>
-                                <Row><Text strong>Stitched to Fit</Text></Row>
+                                <Row><Text strong>Tailor Made</Text></Row>
                                 <Row><Text type={'secondary'}>Tap to schedule measurement session</Text></Row>
                             </Card>
                         </Badge.Ribbon>

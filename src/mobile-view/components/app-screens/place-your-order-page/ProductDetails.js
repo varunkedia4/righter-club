@@ -18,14 +18,14 @@ const ProductDetails = (props) => {
         <div style={{paddingBottom: '1em'}}>
             <Row>
                 <Col offset={1} span={5}>
-                    <a href={navigationLink}><Image preview={false} src={props.designDetails.imageLinks[0]} /></a>
+                    <a href={navigationLink}><Image alt={catalogName} preview={false} src={props.designDetails.imageLinks[0]} /></a>
                 </Col>
 
                 <Col offset={1} span={17}>
                     <div style={{paddingBottom: '0.5em'}}>
                         {
                             (props.stitchOption === "1") &&
-                            <Row style={{paddingBottom: '0.5em'}}><Text strong> Buying Option - Stitch to Fit </Text></Row>
+                            <Row style={{paddingBottom: '0.5em'}}><Text strong> Buying Option - Tailor Made </Text></Row>
                         }
 
                         {

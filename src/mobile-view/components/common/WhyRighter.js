@@ -35,7 +35,7 @@ const WhyRighter = () => {
                     <Col span={4}> <CarOutlined style={{fontSize: '2em'}} /> </Col>
                     <Col span={20}>
                         <Row> <Text type={'secondary'} strong> Fast Delivery </Text></Row>
-                        <Row> <Text type={'secondary'}> For made-to-measure outfits, it doesn't get much faster than this</Text> </Row>
+                        <Row> <Text type={'secondary'}> For tailor-made outfits, it doesn't get much faster than this</Text> </Row>
                     </Col>
                 </Row>
             </div>

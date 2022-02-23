@@ -3,11 +3,13 @@ import {Card, Row, Col, Typography, Button} from "antd";
 import WhyRighter from "../../../common/WhyRighter";
 import {StarOutlined} from '@ant-design/icons';
 import CustomDivider from "../../../common/CustomDivider";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import {useNavigate} from "react-router-dom";
+import {navigationLinks} from "../../../../constants/NavigationLinks";
 
 const CustomerReviewsSection = () => {
 
     const { Title, Text } = Typography;
+    const navigate = useNavigate();
 
     return(
         <div id='HearItFromCustomersSection' style={{paddingBottom: '2.5em', paddingTop: '1.5em'}}>
@@ -96,9 +98,9 @@ const CustomerReviewsSection = () => {
                 </div>
             </div>
             <div style={{paddingTop: '2.5em', paddingLeft: '2em', paddingRight: '2em'}}>
-                <AnchorLink offset={() => 45} href='#ShopByCategorySection'>
-                    <Button type={'primary'} shape={'round'} block> Start Shopping </Button>
-                </AnchorLink>
+                {/*<AnchorLink offset={() => 45} href='#ShopByCategorySection'>*/}
+                    <Button type={'primary'} shape={'round'} block href={navigationLinks.GET_STARTED} onClick={() => navigate(navigationLinks.GET_STARTED)}> Start Shopping </Button>
+                {/*</AnchorLink>*/}
             </div>
         </div>
     );

@@ -31,7 +31,7 @@ const ProductCard = (props) => {
             <a href={navigationLink}>
                 <Card>
                     <LazyLoad height={200} once >
-                        <Image preview={false} width={"100%"} src={designDetails.imageLinks[0]}/>
+                        <Image alt={catalogName} preview={false} width={"100%"} src={designDetails.imageLinks[0]}/>
                     </LazyLoad>
                 </Card>
                 <Col style={{paddingTop: '0.5em', paddingLeft: '0.5em', paddingBottom: '1em'}}>

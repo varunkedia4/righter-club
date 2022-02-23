@@ -8,7 +8,7 @@ const ProductImages = (props) => {
     const productImageCardList = [];
 
     for(let imageCount = 0; imageCount < imageList.length; imageCount++) {
-        productImageCardList.push(<Image style={{ width: 270}} src={imageList[imageCount]}/>)
+        productImageCardList.push(<Image alt={'Product Image'} style={{ width: 270}} src={imageList[imageCount]}/>)
     }
 
     return(

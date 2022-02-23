@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Typography, Col} from "antd";
 import {navigationLinks} from "../../../constants/NavigationLinks";
 import {useNavigate} from "react-router-dom";
-import {catalogName, commonConstants} from "../../../constants/Common";
+import {commonConstants} from "../../../constants/Common";
 
 const SEOTexts = () => {
 

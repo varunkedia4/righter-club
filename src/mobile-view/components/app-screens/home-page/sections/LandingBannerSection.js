@@ -15,9 +15,9 @@ const LandingPageBannerSection = () => {
     // const [isLearnMoreDrawerOpen, setLearnMoreDrawerOpen] = useState(false);
 
     return(
-        <div id='LandingBannerSection' style={{paddingTop: '2em', paddingBottom: '1em'}}>
+        <div id='LandingBannerSection' style={{paddingTop: '3.5em', paddingBottom: '1em'}}>
             <AnchorLink offset={() => 45} href='#ShopByCategorySection'>
-                <Image preview={false} src={homePageImages.LANDING_BANNER}/>
+                <Image alt={'Tailor-Made Men\'s Wear Outfit at Home'} preview={false} src={homePageImages.LANDING_BANNER}/>
             </AnchorLink>
             <div style={{paddingLeft: '1em', paddingTop: '1em'}}>
                 <Row justify="space-around" align="middle">

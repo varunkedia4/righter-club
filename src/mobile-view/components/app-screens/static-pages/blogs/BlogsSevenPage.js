@@ -53,7 +53,7 @@ const BlogsSevenPage = () => {
                 <Text>
                     Broadly there are 3 types of blazer pockets which are used flap pocket taking the maximum share and patch pocket taking the least. Besom Pocket is also known as jetted pocket.
                 </Text>
-                <Image style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_POCKET_STYLES} />
+                <Image alt={'Blazer Pocket Styles'} style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_POCKET_STYLES} />
             </div>
 
             <div style={{ textAlign: 'left',  paddingBottom: '1em', paddingLeft: '1em', paddingRight: '1em'}}>
@@ -61,7 +61,7 @@ const BlogsSevenPage = () => {
                 <Text>
                     Broadly there are 3 types of blazer lapel which are used notch lapel taking the maximum share and peak lapel taking the least.
                 </Text>
-                <Image style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_LAPEL_STYLES} />
+                <Image alt={'Blazer Lapel Styles'} style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_LAPEL_STYLES} />
             </div>
 
             <div style={{ textAlign: 'left',  paddingBottom: '1em', paddingLeft: '1em', paddingRight: '1em'}}>
@@ -69,7 +69,7 @@ const BlogsSevenPage = () => {
                 <Text>
                     Double button blazers takes the maximum share in the market in today’s time when people go for formal usage while in case of occasional purpose, people prefer single button blazers too.
                 </Text>
-                <Image style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_BUTTONS} />
+                <Image alt={'Blazer Buttons'} style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_BUTTONS} />
             </div>
 
             <div style={{ textAlign: 'left',  paddingBottom: '1em', paddingLeft: '1em', paddingRight: '1em'}}>
@@ -77,7 +77,7 @@ const BlogsSevenPage = () => {
                 <Text>
                     Single breasted suit is evergreen which you can use as a multi-purpose outfit while double breasted suit comes handy only for the specific events/occasions.
                 </Text>
-                <Image style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_BUTTONS} />
+                <Image alt={'Blazer Breasting'} style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_BREASTING} />
             </div>
 
             <div style={{ textAlign: 'left',  paddingBottom: '1em', paddingLeft: '1em', paddingRight: '1em'}}>
@@ -85,7 +85,7 @@ const BlogsSevenPage = () => {
                 <Text>
                     Double vent blazers are in trend in today’s time.
                 </Text>
-                <Image style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_BUTTONS} />
+                <Image alt={'Blazer Vent'} style={{paddingTop: '0.5em'}} preview={false} src={extraImages.BLAZER_VENT} />
             </div>
 
             <div style={{ textAlign: 'left',  paddingBottom: '1em', paddingLeft: '1em', paddingRight: '1em'}}>
@@ -93,7 +93,7 @@ const BlogsSevenPage = () => {
                 <Text>
                     Similar to blazers, single-breasted waistcoat is evergreen.
                 </Text>
-                <Image style={{paddingTop: '0.5em'}} preview={false} src={extraImages.WAISTCOAT_BREASTING} />
+                <Image alt={'Waistcoat Breasting'} style={{paddingTop: '0.5em'}} preview={false} src={extraImages.WAISTCOAT_BREASTING} />
             </div>
 
             <div style={{ textAlign: 'left',  paddingBottom: '1em', paddingLeft: '1em', paddingRight: '1em'}}>
@@ -101,7 +101,7 @@ const BlogsSevenPage = () => {
                 <Text>
                     For the formal purpose, people do prefer V-shaped neck while for the occasional purpose, people go for U-shaped neck.
                 </Text>
-                <Image style={{paddingTop: '0.5em'}} preview={false} src={extraImages.WAISTCOAT_NECK} />
+                <Image alt={'Waistcoat Neck'} style={{paddingTop: '0.5em'}} preview={false} src={extraImages.WAISTCOAT_NECK} />
             </div>
 
             <div style={{ textAlign: 'left',  paddingBottom: '1em', paddingLeft: '1em', paddingRight: '1em'}}>
@@ -109,7 +109,7 @@ const BlogsSevenPage = () => {
                 <Text>
                     Depending upon the personal preference & comfort, people do choose the stitching style for Pant.
                 </Text>
-                <Image style={{paddingTop: '0.5em'}} preview={false} src={extraImages.PANT} />
+                <Image alt={'Pant'} style={{paddingTop: '0.5em'}} preview={false} src={extraImages.PANT} />
             </div>
 
             <div style={{ textAlign: 'left',  paddingBottom: '1em', paddingLeft: '1em', paddingRight: '1em'}}>

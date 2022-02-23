@@ -22,7 +22,7 @@ const MobileHeader = () => {
     return(
         <Media at='mobile'>
             <Menu style={{backgroundColor: '#ffffff'}} fixed='top' inverted borderless fluid widths={3}>
-                <Menu.Item as='a' style={{color: '#000000'}} onClick={() => setSideMenuVisible(true)}>
+                <Menu.Item style={{color: '#000000'}} onClick={() => setSideMenuVisible(true)}>
                     <Icon name='bars' size={'large'}/>
                 </Menu.Item>
                 <Menu.Item as='a' style={{color: '#000000', fontSize: '1.2em'}} href={navigationLinks.HOME}> Righter </Menu.Item>
