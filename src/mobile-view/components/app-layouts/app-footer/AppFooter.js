@@ -6,6 +6,7 @@ import {FacebookOutlined, LinkedinOutlined, InstagramOutlined, WhatsAppOutlined,
 import {commonConstants, catalogName} from "../../../constants/Common";
 import SEOTexts from "./SEOTexts";
 import {homePageImages} from "../../../constants/ImageLinks";
+import LazyLoad from "react-lazyload";
 
 const AppFooter = () => {
 
@@ -78,7 +79,11 @@ const AppFooter = () => {
 
             <Row style={{paddingTop: "1.5em"}}><Text> 100% Secure Payments </Text></Row>
             <Row style={{paddingTop: "0.5em"}}>
-                <Col span={5}><Image alt={'UPI LOGO'} preview={false} width={50} onClick={() => handleNavigation(navigationLinks.SECURE_PAYMENT)} src={homePageImages.UPI_LOGO} /></Col>
+                <Col span={5}>
+                    <LazyLoad height={200} once >
+                        <Image alt={'UPI LOGO'} preview={false} width={50} onClick={() => handleNavigation(navigationLinks.SECURE_PAYMENT)} src={homePageImages.UPI_LOGO} />
+                    </LazyLoad>
+                </Col>
                 <Col span={19}><Text type="secondary" onClick={() => handleNavigation(navigationLinks.SECURE_PAYMENT)}> Scan QR Code to Pay via UPI </Text></Col>
             </Row>
 

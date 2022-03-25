@@ -23,7 +23,7 @@ export const homePageImages = {
         SHIRT: "https://s3-eu-west-1.amazonaws.com/righter-home-page/Shirt.webp"
     },
 
-    UPI_LOGO: "https://s3-eu-west-1.amazonaws.com/righter-home-page/UPILogo.png"
+    UPI_LOGO: "https://s3-eu-west-1.amazonaws.com/righter-home-page/UPILogo.webp"
 }
 
 export const extraImages = {
